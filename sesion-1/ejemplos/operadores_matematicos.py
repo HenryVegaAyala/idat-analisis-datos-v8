@@ -10,7 +10,7 @@ division = 4 / 2
 numero = 5
 
 resultado = numero + 20
-print(f"Resultado: {resultado}")
+#print(f"Resultado: {resultado}")
 
 numero += 20
 print(f"Resultado: {numero}")
