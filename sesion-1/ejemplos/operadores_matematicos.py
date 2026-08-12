@@ -8,5 +8,9 @@ division = 4 / 2
 
 # operadores matematicos directos
 numero = 5
-numero += 5 # esto representa ---> numero = numero + 5
-print(numero)
+
+resultado = numero + 20
+print(f"Resultado: {resultado}")
+
+numero += 20
+print(f"Resultado: {numero}")
