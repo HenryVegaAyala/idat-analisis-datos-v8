@@ -32,6 +32,13 @@ print(f"Lista de productos y eliminados: {panaderia}")
 del panaderia[2]
 print(f"Lista de productos y eliminados por indice: {panaderia}")
 
+# duplicado_de_productos = panaderia.copy() # Duplicado basado en copia
+duplicado_de_productos = ["pan", "muffin", "croissant", "aceite de oliva"] # Duplicado manual
+for producto in duplicado_de_productos:
+    panaderia.append(producto)
+
+print(f"Valores duplicados: {panaderia}")
+
 # 10. Obtener la cantidad de productos de una lista
 total_productos = len(panaderia)
 print(f"Total de productos: {total_productos}")
