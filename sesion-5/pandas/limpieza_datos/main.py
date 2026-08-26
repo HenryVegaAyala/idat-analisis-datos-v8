@@ -16,5 +16,5 @@ print("-" * 50)
 
 # Drop_duplicates se encarga de eliminar valores duplicados
 
-data_corregida = data.drop_duplicates()
+data_corregida = data_sin_nan.drop_duplicates()
 print(data_corregida)
