@@ -28,6 +28,9 @@ plt.plot(
     color="red"
 )
 
+plt.grid(True)
+plt.legend()
+
 plt.title("Gastos de la casa")
 plt.xlabel("Mes")
 plt.ylabel("Gastos S/.")
