@@ -5,11 +5,11 @@ import scipy.stats as st
 df = pd.read_csv("embalaje_puntaje.csv")
 
 # 2. Separar los puntajes según el tipo de embalaje.
-embajale_tradicional = df[df["embalaje"] == "A"]["puntuacion"] # Filtrado avanzado por embalaje del tipo A
-embajale_ecologico = df[df["embalaje"] == "B"]["puntuacion"] # Filtrado avanzado por embalaje del tipo B
+embalaje_tradicional = df[df["embalaje"] == "A"]["puntuacion"] # Filtrado avanzado por embalaje del tipo A
+embalaje_ecologico = df[df["embalaje"] == "B"]["puntuacion"] # Filtrado avanzado por embalaje del tipo B
 
 # 3. Calculo de test A/B
-resultado = st.ttest_ind(embajale_tradicional, embajale_ecologico)
+resultado = st.ttest_ind(embalaje_tradicional, embalaje_ecologico)
 
 # 4. Mostrar el resultado
 print(f"Valor P: {resultado.pvalue:.4f}")
